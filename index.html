@@ -6,16 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
     <link rel="stylesheet" href="style.css">
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
     <div class="todo-container">
         <div class="input">
             <input type="text" class="form-control" placeholder="New Task" name="">
-            <div class="add"<i class="meterial-icon">Add</i></div>
+            <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
         </div>
     </div>
+
+    <ul class="todo-list">
+        <li>
+            <div class="left-cont">
+                <input type="checkbox" id="check-1" name="">
+                <label for="check-1"></label>
+                <span class = "removed"><a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">delete</i></a></span>
+            </div>
+        </li>
+    </ul>
     
 </body>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </html>
