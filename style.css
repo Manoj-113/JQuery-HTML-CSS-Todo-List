@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@200;300;400;500;600;800;900');
 *{
     padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background: #161117;
+
 }
