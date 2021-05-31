@@ -44,6 +44,10 @@
                     $(this).closest('li').children(".remove").removeClass("active");
                 }
             })
+
+            $(document).on('click','.remove',function(){
+                $(this).parent().remove();
+            })
         })
     </script>
 
