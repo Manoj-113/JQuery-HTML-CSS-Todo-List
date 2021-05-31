@@ -19,15 +19,7 @@
     </div>
 
     <ul class="todo-list">
-        <li>
-            <div class="left-cont">
-                <input type="checkbox" id="check-1" name="">
-                <label for="check-1"></label>
-                <span>Task 1</span>
-            </div>
-            <span class = "removed"><a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">delete</i></a></span>
-
-        </li>
+        
     </ul>
     
 </body>
@@ -35,10 +27,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
+            var count = 0;
             $('.add').click(function(){
                 var inputval = $(".form-control").val();
                 if(inputval != ""){
-                    $(".todo-list").append('<li><div class="left-cont"><input type="checkbox" id="check-1" name=""><label for="check-1"></label><span>Task 1</span></div><span class = "removed"><a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">delete</i></a></span></li>');
+                    count ++;
+                    $(".todo-list").append('<li><div class="left-cont"><input type="checkbox" id="check-"+count+" name=""><label for="+count+"></label><span>'+inputval+'Task 1</span></div><span class = "removed"><a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">delete</i></a></span></li>');
                 }
             })
         })
