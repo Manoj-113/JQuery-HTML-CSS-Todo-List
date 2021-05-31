@@ -34,6 +34,15 @@
                     count ++;
                     $(".todo-list").append('<li><div class="left-cont"><input type="checkbox" id="check-"+count+" name=""><label for="+count+"></label><span>'+inputval+'Task 1</span></div><span class = "removed"><a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">delete</i></a></span></li>');
                 }
+                $(".form-control").val('');
+            })
+
+            $(document).on('change', 'input[type="checkboc"]',function(){
+                if ($(this).is(':checked')){
+                    $(this).closest('li').children(".remove").addClass("active");
+                }else{
+                    $(this).closest('li').children(".remove").removeClass("active");
+                }
             })
         })
     </script>
