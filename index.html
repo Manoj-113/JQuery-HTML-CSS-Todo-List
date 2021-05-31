@@ -32,6 +32,18 @@
     
 </body>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.add').click(function(){
+                var inputval = $(".form-control").val();
+                if(inputval != ""){
+                    $(".todo-list").append('<li><div class="left-cont"><input type="checkbox" id="check-1" name=""><label for="check-1"></label><span>Task 1</span></div><span class = "removed"><a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">delete</i></a></span></li>');
+                }
+            })
+        })
+    </script>
+
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
